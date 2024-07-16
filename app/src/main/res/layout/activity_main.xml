@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:text="@string/app_title"
             android:textAlignment="center"
-            android:textSize="36sp"
+            android:textSize="42sp"
             android:textStyle="bold"
             android:textColor="@color/primary_text_color"
             android:layout_marginBottom="16dp" />
@@ -62,7 +62,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Ingresar Correo"
+            android:text="@string/ingresar_correo"
             android:textAlignment="center"
             android:textSize="24sp"
             android:textStyle="bold|italic" />
@@ -74,7 +74,7 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/rounded_corners_button"
-            android:hint="Ingresar Correo"
+            android:hint="@string/ingresar_correo"
             android:inputType="textEmailAddress"
             android:textAlignment="center" />
 
@@ -83,7 +83,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:text="Contraseña"
+            android:text="@string/contrase_a"
             android:textAlignment="center"
             android:textSize="24sp"
             android:textStyle="bold|italic" />
@@ -95,7 +95,7 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginBottom="16dp"
             android:background="@drawable/rounded_corners_button"
-            android:hint="Ingresar Contraseña"
+            android:hint="@string/ingresar_contrase_a"
             android:inputType="textPassword"
             android:textAlignment="center" />
 
@@ -106,7 +106,7 @@
             android:layout_marginHorizontal="32dp"
             android:layout_marginBottom="16dp"
             android:backgroundTint="#2F651C"
-            android:text="INGRESAR"
+            android:text="@string/btn_ingresar"
             android:textAlignment="center"
             android:textAllCaps="false" />
 
@@ -116,7 +116,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="16dp"
-            android:text="¿No tienes una cuenta?"
+            android:text="@string/no_tienes_una_cuenta"
             android:textAlignment="center"
             android:textSize="18sp"
             android:textStyle="bold|italic" />
@@ -127,7 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="32dp"
             android:backgroundTint="#2F651C"
-            android:text="REGISTRATE"
+            android:text="@string/btn_registrate"
             android:textAlignment="center"
             android:textAllCaps="false" />
     </LinearLayout>
