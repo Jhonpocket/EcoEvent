@@ -6,4 +6,7 @@
     <string name="tips_text">Consejos</string>
     <string name="contact_text">Contacto</string>
     <string name="ir_a_pantalla_principal">Ir a pantalla Principal</string>
+    <string name="home">Inicio</string>
+    <string name="registros_text">Registros</string>
+    <string name="consejos_text">Consejos</string>
 </resources>
