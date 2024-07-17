@@ -20,4 +20,7 @@
     <string name="correo">Correo</string>
     <string name="celular">Celular</string>
     <string name="btn_inscribete">Inscríbete</string>
+    <string name="estadisiticas">Estadisiticas</string>
+    <string name="categoria">Categoria</string>
+    <string name="estad_sticas">Estadísticas</string>
 </resources>

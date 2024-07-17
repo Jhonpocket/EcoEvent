@@ -39,8 +39,8 @@ public class MainActivity3 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     // Ir a la pantalla de estadísticas
-                    //Intent intent = new Intent(MainActivity.this, StatisticsActivity.class);
-                    Intent intent = new Intent(MainActivity3.this, MainActivity.class);
+                    Intent intent = new Intent(MainActivity3.this, StatisticsActivity.class);
+                    //Intent intent = new Intent(MainActivity3.this, MainActivity.class);
                     startActivity(intent);
                 }
             });
@@ -49,8 +49,8 @@ public class MainActivity3 extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     // Ir a la pantalla de consejos
-                    //Intent intent = new Intent(MainActivity.this, TipsActivity.class);
-                    Intent intent = new Intent(MainActivity3.this, MainActivity.class);
+                    Intent intent = new Intent(MainActivity3.this, TipsActivity.class);
+                    //Intent intent = new Intent(MainActivity3.this, MainActivity.class);
                     startActivity(intent);
                 }
             });
