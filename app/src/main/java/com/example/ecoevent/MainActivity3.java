@@ -33,7 +33,7 @@ public class MainActivity3 extends AppCompatActivity {
                 public void onClick(View v) {
                     // Ir a la pantalla de categorías
                    // Intent intent = new Intent(MainActivity.this, CategoriesActivity.class);
-                    Intent intent = new Intent(MainActivity3.this, MainActivity.class);
+                    Intent intent = new Intent(MainActivity3.this, CategoriaActivity.class);
                     startActivity(intent);
                 }
             });
@@ -70,7 +70,7 @@ public class MainActivity3 extends AppCompatActivity {
                     if (selectedItemId == R.id.menu_home) {
                         targetActivity = MainActivity3.class;
                     } else if (selectedItemId == R.id.menu_categories) {
-                        targetActivity = CategoriesActivity.class;
+                        targetActivity = CategoriaActivity.class;
                     } else if (selectedItemId == R.id.menu_register) {
                         targetActivity = RegisterActivity.class;
                     } else if (selectedItemId == R.id.menu_stadistic) {
