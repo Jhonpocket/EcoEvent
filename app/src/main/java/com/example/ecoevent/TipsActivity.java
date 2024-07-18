@@ -49,7 +49,7 @@ public class TipsActivity extends AppCompatActivity {
                 if (selectedItemId == R.id.menu_home) {
                     targetActivity = MainActivity3.class;
                 } else if (selectedItemId == R.id.menu_categories) {
-                    targetActivity = CategoriesActivity.class;
+                    targetActivity = CategoriaActivity.class;
                 } else if (selectedItemId == R.id.menu_register) {
                     targetActivity = RegisterActivity.class;
                 } else if (selectedItemId == R.id.menu_stadistic) {
