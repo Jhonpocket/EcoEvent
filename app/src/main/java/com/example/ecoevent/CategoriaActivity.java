@@ -6,7 +6,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -21,6 +23,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class CategoriaActivity extends AppCompatActivity {
     private static final String SELECTED_ITEM_ID = "SELECTED_ITEM_ID";
     private int selectedItemId = R.id.menu_categories;
+    private String selectedItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,29 +32,33 @@ public class CategoriaActivity extends AppCompatActivity {
 
         Spinner spinner = findViewById(R.id.spinner);
 
-        // Crear una lista de elementos para el Spinner
-        String[] items = new String[]{"Bebidas", "Decoraciones","Alimentos"};
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.spinner_items, R.layout.spinner_item);
 
-        // Crear un ArrayAdapter usando el array y un layout predeterminado del Spinner
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, items);
-
-        // Especificar el layout a usar cuando la lista de opciones aparece
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // Aplicar el adaptador al Spinner
         spinner.setAdapter(adapter);
 
-        // Configurar el listener para cuando un elemento es seleccionado
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-                // Mostrar un mensaje cuando se selecciona un elemento
-                Toast.makeText(CategoriaActivity.this, "Seleccionaste: " + items[position], Toast.LENGTH_SHORT).show();
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                selectedItem = parent.getItemAtPosition(position).toString();
+                // Cambiar el color del texto del ítem seleccionado
+                ((TextView) parent.getChildAt(0)).setTextColor(getResources().getColor(R.color.color_text));
+
             }
 
             @Override
-            public void onNothingSelected(AdapterView<?> parentView) {
-                // No hacer nada
+            public void onNothingSelected(AdapterView<?> parent) {
+                // Código cuando no hay selección
+            }
+        });
+        Button buttonGoToRegistros = findViewById(R.id.buttonRegistrar);
+        buttonGoToRegistros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CategoriaActivity.this, RegistrosActivity.class);
+                intent.putExtra("selectedItem", selectedItem);
+                startActivity(intent);
             }
         });
 
@@ -69,7 +76,7 @@ public class CategoriaActivity extends AppCompatActivity {
                 } else if (selectedItemId == R.id.menu_categories) {
                     targetActivity = CategoriaActivity.class;
                 } else if (selectedItemId == R.id.menu_register) {
-                    targetActivity = RegisterActivity.class;
+                    targetActivity = RegistrosActivity.class;
                 } else if (selectedItemId == R.id.menu_stadistic) {
                     targetActivity = StatisticsActivity.class;
                 } else if (selectedItemId == R.id.menu_about) {

@@ -104,7 +104,7 @@ public class StatisticsActivity extends AppCompatActivity {
                 } else if (selectedItemId == R.id.menu_categories) {
                     targetActivity = CategoriaActivity.class;
                 } else if (selectedItemId == R.id.menu_register) {
-                    targetActivity = RegisterActivity.class;
+                    targetActivity = RegistrosActivity.class;
                 } else if (selectedItemId == R.id.menu_stadistic) {
                     targetActivity = StatisticsActivity.class;
                 } else if (selectedItemId == R.id.menu_about) {

@@ -27,6 +27,7 @@ public class MainActivity3 extends AppCompatActivity {
             LinearLayout categoriesCard = findViewById(R.id.categories_card);
             LinearLayout statisticsCard = findViewById(R.id.statistics_card);
             LinearLayout tipsCard = findViewById(R.id.tips_card);
+            LinearLayout registerCard = findViewById(R.id.register_card);
 
             categoriesCard.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -58,6 +59,16 @@ public class MainActivity3 extends AppCompatActivity {
                 }
             });
 
+            registerCard.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    // Ir a la pantalla de Registros
+                    Intent intent = new Intent(MainActivity3.this, RegistrosActivity.class);
+                    //Intent intent = new Intent(MainActivity3.this, MainActivity.class);
+                    startActivity(intent);
+                }
+            });
+
             BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
             bottomNavigationView.setSelectedItemId(selectedItemId);
 
@@ -72,7 +83,7 @@ public class MainActivity3 extends AppCompatActivity {
                     } else if (selectedItemId == R.id.menu_categories) {
                         targetActivity = CategoriaActivity.class;
                     } else if (selectedItemId == R.id.menu_register) {
-                        targetActivity = RegisterActivity.class;
+                        targetActivity = RegistrosActivity.class;
                     } else if (selectedItemId == R.id.menu_stadistic) {
                         targetActivity = StatisticsActivity.class;
                     } else if (selectedItemId == R.id.menu_about) {

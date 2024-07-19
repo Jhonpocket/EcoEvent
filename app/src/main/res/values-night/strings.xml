@@ -22,4 +22,17 @@
     <string name="celular">Celular</string>
     <string name="btn_inscribete">Inscríbete</string>
     <string name="registrar">Registrar</string>
-</resources>
+    <string name="tipo">Tipo:</string>
+    <string name="guardar">Guardar</string>
+    <string name="cantidadEdit">Cantidad:</string>
+    <string name="mes">Mes:</string>
+    <string name="costo">Costo:</string>
+    <string name="costohit">Costo</string>
+    <string-array name="spinner_items">
+        <item>Seleccione</item>
+        <item>Bebidas</item>
+        <item>Alimentos</item>
+        <item>Decoraciones</item>
+    </string-array>
+
+    </resources>
