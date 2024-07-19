@@ -138,7 +138,7 @@
             android:layout_marginTop="12dp"
             android:text="@string/mes"
             android:textAlignment="gravity"
-            android:textSize="1sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <!-- Mes Spinner -->
