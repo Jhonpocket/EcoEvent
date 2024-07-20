@@ -7,4 +7,32 @@
     <string name="tips_text">Consejos</string>
     <string name="contact_text">Contacto</string>
     <string name="ir_a_pantalla_principal">Ir a pantalla Principal</string>
-</resources>
+    <string name="home">Inicio</string>
+    <string name="registros_text">Registros</string>
+    <string name="consejos_text">Consejos</string>
+    <string name="reg_strate">Regístrate</string>
+    <string name="ingresar_correo">Ingresar Correo</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="ingresar_contrase_a">Ingresar Contraseña</string>
+    <string name="btn_ingresar">INGRESAR</string>
+    <string name="no_tienes_una_cuenta">¿No tienes una cuenta?</string>
+    <string name="btn_registrate">REGISTRATE</string>
+    <string name="nombre">Nombre</string>
+    <string name="correo">Correo</string>
+    <string name="celular">Celular</string>
+    <string name="btn_inscribete">Inscríbete</string>
+    <string name="registrar">Registrar</string>
+    <string name="tipo">Tipo:</string>
+    <string name="guardar">Guardar</string>
+    <string name="cantidadEdit">Cantidad:</string>
+    <string name="mes">Mes:</string>
+    <string name="costo">Costo:</string>
+    <string name="costohit">Costo</string>
+    <string-array name="spinner_items">
+        <item>Seleccione</item>
+        <item>Bebidas</item>
+        <item>Alimentos</item>
+        <item>Decoraciones</item>
+    </string-array>
+
+    </resources>

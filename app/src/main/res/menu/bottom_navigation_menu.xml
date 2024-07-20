@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-  <!--*  <item
-        android:id="@+id/menu_home"
-        android:icon="@drawable/ic_home"
-        android:title="@string/home" />
-    -->
-    <item
-        android:id="@+id/menu_settings"
-        android:icon="@drawable/ic_categories"
-        android:title="@string/categories_text" />
-    <item
-        android:id="@+id/menu_about"
-        android:icon="@drawable/ic_statistics"
-        android:title="@string/statistics_text" />
+  <item
+      android:id="@+id/menu_home"
+      android:icon="@drawable/home"
+      android:title="@string/home" />
+  <item
+      android:id="@+id/menu_categories"
+      android:icon="@drawable/categoria"
+      android:title="@string/categories_text" />
+  <item
+      android:id="@+id/menu_register"
+      android:icon="@drawable/registros"
+      android:title="@string/registros_text" />
+  <item
+      android:id="@+id/menu_stadistic"
+      android:icon="@drawable/estadisticas"
+      android:title="@string/statistics_text" />
+  <item
+      android:id="@+id/menu_about"
+      android:icon="@drawable/consejos"
+      android:title="@string/consejos_text" />
 </menu>
