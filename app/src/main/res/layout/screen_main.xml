@@ -9,7 +9,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/background_image"
+        android:src="@drawable/rounded_corners_button"
         android:alpha="0.2"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -184,7 +184,7 @@
             app:cardElevation="12dp">
 
             <LinearLayout
-                android:id="@+id/contact_card"
+                android:id="@+id/register_card"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -196,13 +196,13 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_gravity="center_horizontal"
-                    android:src="@drawable/ic_statistics" />
+                    android:src="@drawable/ic_register" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="@string/contact_text"
+                    android:text="@string/registros_text"
                     android:textColor="@color/primary_text_color" />
 
             </LinearLayout>

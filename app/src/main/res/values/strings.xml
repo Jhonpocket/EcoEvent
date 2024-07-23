@@ -23,4 +23,23 @@
     <string name="estadisiticas">Estadisiticas</string>
     <string name="categoria">Categoria</string>
     <string name="estad_sticas">Estadísticas</string>
+<<<<<<< HEAD
+=======
+    <string-array name="spinner_items">
+        <item>Seleccione</item>
+        <item>Bebidas</item>
+        <item>Alimentos</item>
+        <item>Decoraciones</item>
+    </string-array>
+    <string name="registrar">Registrar</string>
+    <string name="tipo">Tipo:</string>
+    <string name="guardar">Guardar</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="cantidadEdit">Cantidad:</string>
+    <string name="mes">Mes:</string>
+    <string name="costo">Costo:</string>
+    <string name="costohit">Costo</string>
+
+
+>>>>>>> master
 </resources>

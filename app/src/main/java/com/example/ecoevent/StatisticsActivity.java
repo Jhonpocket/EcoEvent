@@ -1,8 +1,11 @@
 package com.example.ecoevent;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.github.mikephil.charting.charts.HorizontalBarChart;
@@ -16,10 +19,16 @@ import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.data.PieEntry;
 import com.github.mikephil.charting.formatter.IndexAxisValueFormatter;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 
 import java.util.ArrayList;
 
 public class StatisticsActivity extends AppCompatActivity {
+
+    private static final String SELECTED_ITEM_ID = "SELECTED_ITEM_ID";
+    private int selectedItemId = R.id.menu_stadistic;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,5 +91,35 @@ public class StatisticsActivity extends AppCompatActivity {
         xAxis.setGranularityEnabled(true);
 
         horizontalBarChart.invalidate();
+
+        BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
+        bottomNavigationView.setSelectedItemId(selectedItemId);
+
+        bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                selectedItemId = item.getItemId();
+                Class<?> targetActivity = null;
+
+                if (selectedItemId == R.id.menu_home) {
+                    targetActivity = MainActivity3.class;
+                } else if (selectedItemId == R.id.menu_categories) {
+                    targetActivity = CategoriaActivity.class;
+                } else if (selectedItemId == R.id.menu_register) {
+                    targetActivity = RegistrosActivity.class;
+                } else if (selectedItemId == R.id.menu_stadistic) {
+                    targetActivity = StatisticsActivity.class;
+                } else if (selectedItemId == R.id.menu_about) {
+                    targetActivity = TipsActivity.class;
+                }
+
+                if (targetActivity != null) {
+                    startActivity(new Intent(StatisticsActivity.this, targetActivity));
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        });
     }
 }

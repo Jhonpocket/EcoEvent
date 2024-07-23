@@ -3,6 +3,13 @@ package com.example.ecoevent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -11,30 +18,49 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.example.ecoevent.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class TipsActivity extends AppCompatActivity {
-
+public class CategoriaActivity extends AppCompatActivity {
     private static final String SELECTED_ITEM_ID = "SELECTED_ITEM_ID";
-    private int selectedItemId = R.id.menu_about;
+    private int selectedItemId = R.id.menu_categories;
+    private String selectedItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_tips);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        setContentView(R.layout.activity_categoria);
 
-        final int MENU_HOME = R.id.menu_home;
-        final int MENU_CATEGORIES = R.id.menu_categories;
-        final int MENU_REGISTER = R.id.menu_register;
-        final int MENU_STATISTIC = R.id.menu_stadistic;
-        final int MENU_ABOUT = R.id.menu_about;
+        Spinner spinner = findViewById(R.id.spinner);
+
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.spinner_items, R.layout.spinner_item);
+
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                selectedItem = parent.getItemAtPosition(position).toString();
+                // Cambiar el color del texto del ítem seleccionado
+                ((TextView) parent.getChildAt(0)).setTextColor(getResources().getColor(R.color.color_text));
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // Código cuando no hay selección
+            }
+        });
+        Button buttonGoToRegistros = findViewById(R.id.buttonRegistrar);
+        buttonGoToRegistros.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CategoriaActivity.this, RegistrosActivity.class);
+                intent.putExtra("selectedItem", selectedItem);
+                startActivity(intent);
+            }
+        });
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(selectedItemId);
@@ -58,7 +84,7 @@ public class TipsActivity extends AppCompatActivity {
                 }
 
                 if (targetActivity != null) {
-                    startActivity(new Intent(TipsActivity.this, targetActivity));
+                    startActivity(new Intent(CategoriaActivity.this, targetActivity));
                     return true;
                 } else {
                     return false;
