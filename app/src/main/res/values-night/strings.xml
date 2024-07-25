@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">EcoEvent</string>
-    <string name="app_title">EcoEvent</string>
+    <string name="app_name" translatable="false">EcoEvent</string>
+    <string name="app_title" translatable="false">EcoEvent</string>
     <string name="categories_text">Categorías</string>
     <string name="statistics_text">Estadísticas</string>
     <string name="tips_text">Consejos</string>
@@ -28,6 +28,9 @@
     <string name="mes">Mes:</string>
     <string name="costo">Costo:</string>
     <string name="costohit">Costo</string>
+    <string name="google_login">Google</string>
+    <string name="facebook_login">Facebook</string>
+    <string name="forgot_password">¿Olvidaste tu usuario/contraseña?</string>
     <string-array name="spinner_items">
         <item>Seleccione</item>
         <item>Bebidas</item>

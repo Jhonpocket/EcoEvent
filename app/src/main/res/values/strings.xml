@@ -37,6 +37,9 @@
     <string name="mes">Mes:</string>
     <string name="costo">Costo:</string>
     <string name="costohit">Costo</string>
+    <string name="google_login">Google</string>
+    <string name="facebook_login">Facebook</string>
+    <string name="forgot_password">¿Olvidaste tu usuario/contraseña?</string>
 
 
 </resources>
