@@ -9,5 +9,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="color_text">#698151</color>
     <color name="color_spiner">#D9D9D9</color>
+    <color name="colorIconSelected">#FF0000</color> <!-- Color para íconos seleccionados -->
 
 </resources>
