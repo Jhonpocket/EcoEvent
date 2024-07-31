@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText ingresarContraseña;
     private ImageButton visibilityButton;
     private boolean passwordVisible = false;
+    private UserManager userManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,24 @@ public class MainActivity extends AppCompatActivity {
 
         // Configura los listeners
         setupListeners();
+        //inica el UserManager
+        userManager = new UserManager(this);
+        //Validacion con SharePreference
+        Ingresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email = ingresarCorreo.getText().toString();
+                String password = ingresarContraseña.getText().toString();
+                if(userManager.loginUser(email,password)){
+                    Intent intent = new Intent(MainActivity.this, MainActivity3.class);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Toast.makeText(MainActivity.this, "Email o Password incorrecto", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
     }
 
     // Método para inicializar los elementos de la interfaz de usuario
@@ -50,14 +69,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 togglePasswordVisibility();
-            }
-        });
-
-        // Listener para el botón Ingresar
-        Ingresar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                handleLogin();
             }
         });
 
@@ -95,19 +106,6 @@ public class MainActivity extends AppCompatActivity {
         ingresarContraseña.setSelection(ingresarContraseña.getText().length());
     }
 
-    // Método para manejar el proceso de inicio de sesión
-    private void handleLogin() {
-        String email = ingresarCorreo.getText().toString();
-        String password = ingresarContraseña.getText().toString();
-
-        if (validateCredentials(email, password)) {
-            Intent intent = new Intent(MainActivity.this, MainActivity3.class);
-            startActivity(intent);
-        } else {
-            Toast.makeText(MainActivity.this, "Usuario/Contraseña incorrectos", Toast.LENGTH_SHORT).show();
-        }
-    }
-
     // Método para navegar a la actividad de registro
     private void navigateToRegister() {
         Intent intent = new Intent(MainActivity.this, RegisterActivity.class);
@@ -118,14 +116,5 @@ public class MainActivity extends AppCompatActivity {
     private void navigateToForgotPassword() {
         Intent intent = new Intent(MainActivity.this, ForgotPasswordActivity.class);
         startActivity(intent);
-    }
-
-    // Método de validación de credenciales
-    private boolean validateCredentials(String email, String password) {
-        // Credenciales predeterminadas
-        String defaultEmail = "jair.cabra@gmail.com";
-        String defaultPassword = "1234";
-
-        return email.equals(defaultEmail) && password.equals(defaultPassword);
     }
 }
