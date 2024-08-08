@@ -56,6 +56,7 @@ public class CategoriaActivity extends AppCompatActivity {
         buttonGoToRegistros.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String selectedCategory = spinner.getSelectedItem().toString();
                 Intent intent = new Intent(CategoriaActivity.this, RegistrosActivity.class);
                 intent.putExtra("selectedItem", selectedItem);
                 startActivity(intent);
