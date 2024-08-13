@@ -8,6 +8,6 @@
     <color name="teal_200">#597F66</color> <!-- Ajustado para tema oscuro -->
     <color name="teal_700">#365140</color> <!-- Ajustado para tema oscuro -->
     <color name="color_text">#214221</color> <!-- Ajustado para tema oscuro -->
-    <color name="color_spiner">#3D3D3D</color> <!-- Ajustado para tema oscuro -->
+    <color name="color_spiner">#FFFFFF</color> <!-- Ajustado para tema oscuro -->
 
 </resources>

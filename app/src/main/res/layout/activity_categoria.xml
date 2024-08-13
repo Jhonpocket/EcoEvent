@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".CategoriaActivity">
 
     <!-- TextView for the app title -->
@@ -71,8 +72,9 @@
 
     <Spinner
         android:id="@+id/spinner"
-        android:layout_width="297dp"
-        android:layout_height="54dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/spinner_background"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,8 +83,9 @@
 
     <Button
         android:id="@+id/buttonRegistrar"
-        android:layout_width="170dp"
-        android:layout_height="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
         android:layout_marginTop="88dp"
         android:backgroundTint="#2F651C"
         android:text="@string/registrar"
@@ -91,6 +94,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/spinner"
+        android:background="@drawable/rounded_corners_button"
         app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

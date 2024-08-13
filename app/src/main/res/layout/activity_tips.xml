@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".TipsActivity">
+    tools:context=".TipsActivity"
+    android:background="@color/white">
 
     <ImageButton
         android:id="@+id/logout_button"

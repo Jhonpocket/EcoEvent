@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#D9D9D9" /> <!-- Fondo blanco, cámbialo según tu necesidad -->
+    <solid android:color="@color/color_spiner" />
+    <!-- Fondo blanco, cámbialo según tu necesidad -->
     <stroke
         android:width="2dp"
         android:color="@color/color_spiner" /> <!-- Color del borde -->
@@ -10,4 +11,5 @@
         android:top="8dp"
         android:right="8dp"
         android:bottom="8dp" />
+
 </shape>
