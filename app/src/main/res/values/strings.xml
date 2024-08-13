@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">EcoEvent</string>
-    <string name="app_title">EcoEvent</string>
+    <string name="app_name" translatable="false">EcoEvent</string>
+    <string name="app_title" translatable="false">EcoEvent</string>
     <string name="categories_text">Categorías</string>
     <string name="statistics_text">Estadísticas</string>
     <string name="tips_text">Consejos</string>
@@ -37,4 +37,13 @@
     <string name="mes">Mes:</string>
     <string name="costo">Costo:</string>
     <string name="costohit">Costo</string>
+    <string name="google_login">Google</string>
+    <string name="facebook_login">Facebook</string>
+    <string name="forgot_password">¿Olvidaste tu usuario/contraseña?</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="enter_your_email">Introduce tu correo electrónico</string>
+    <string name="reset_password">Restablecer Contraseña</string>
+    <string name="password_recovery_email_sent_please_check_your_inbox">Correo electrónico de recuperación de contraseña enviado. Por favor revisa tu bandeja de entrada</string>
+    <string name="back">Back</string>
+    <string name="confirmar_contrase_a">Confirmar Contraseña</string>
 </resources>

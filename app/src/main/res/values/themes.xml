@@ -5,9 +5,7 @@
         <item name="colorPrimary">@color/primary_text_color</item>
         <item name="colorPrimaryDark">@color/primary_text_color</item>
         <item name="colorAccent">@color/primary_text_color</item>
-        <!-- Background and surface colors -->
-        <item name="background">@color/background</item>
-        <item name="colorSurface">@color/surface</item>
+
         <!-- Text colors -->
         <item name="colorOnBackground">@color/primary_text_color</item>
         <item name="colorOnSurface">@color/primary_text_color</item>

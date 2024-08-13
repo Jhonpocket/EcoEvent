@@ -31,6 +31,12 @@
     <string name="google_login">Google</string>
     <string name="facebook_login">Facebook</string>
     <string name="forgot_password">¿Olvidaste tu usuario/contraseña?</string>
+    <string name="logout">Cerrar Sesión</string>
+    <string name="enter_your_email">Introduce tu correo electrónico</string>
+    <string name="reset_password">Restablecer contraseña</string>
+    <string name="password_recovery_email_sent_please_check_your_inbox">Correo electrónico de recuperación de contraseña enviado. Por favor revisa tu bandeja de entrada.</string>
+    <string name="back">Back</string>
+    <string name="confirmar_contrase_a">Confirmar Contraseña</string>
     <string-array name="spinner_items">
         <item>Seleccione</item>
         <item>Bebidas</item>

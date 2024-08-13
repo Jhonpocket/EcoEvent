@@ -7,141 +7,194 @@
     android:layout_height="match_parent"
     tools:context=".RegisterActivity"
     android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp">
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/app_title"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text_color"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:id="@+id/contentLayout"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:alpha="0.8"
+        android:background="@drawable/rounded_corners"
+        android:elevation="8dp"
         android:orientation="vertical"
-        android:padding="16dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout"
+        tools:visibility="visible">
 
-        <!-- Header Layout -->
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="16dp">
+            android:layout_marginBottom="8dp"
+            android:text="@string/reg_strate"
+            android:textAlignment="center"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textSize="24sp"
+            android:textStyle="bold|italic" />
 
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="match_parent"
-                android:layout_height="6dp" />
+        <EditText
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/nombre"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text_color"
+            android:textColorHint="@color/color_text" />
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/app_title"
-                android:textAlignment="center"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                android:textColor="@color/primary_text_color"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"/>
-        </LinearLayout>
+        <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textAlignment="center"
+        android:textColor="@color/primary_text_color"
+        android:textColorHint="@color/color_text" />
 
-        <!-- Logo Layout -->
-        <LinearLayout
+        <EditText
+            android:id="@+id/editTextText6"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edit_text_background"
+            android:hint="@string/celular"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/primary_text_color"
+            android:textColorHint="@color/color_text" />
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_marginHorizontal="32dp"
             android:layout_marginBottom="16dp">
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="match_parent"
-                android:layout_height="170dp"
-                android:layout_gravity="center"
-                app:srcCompat="@drawable/logo" />
-        </LinearLayout>
-
-        <!-- Subtitle Layout -->
-        <LinearLayout
-            android:id="@+id/subtitleLayout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginBottom="16dp">
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/reg_strate"
-                android:textAlignment="center"
-                android:textSize="28sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Register Form Layout -->
-        <LinearLayout
-            android:id="@+id/registerLayout"
-            android:layout_width="327dp"
-            android:layout_height="326dp"
-            android:layout_gravity="center"
-            android:background="@drawable/rounded_corners"
-            android:elevation="8dp"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <EditText
-                android:id="@+id/editTextText3"
-                android:layout_width="match_parent"
-                android:layout_height="37dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rounded_corners_button"
-                android:hint="@string/nombre"
-                android:textColorHint="@color/color_text"
-                android:inputType="text"
-                android:textColor="@color/primary_text_color"
-                android:textAlignment="center" />
-
-            <EditText
-                android:id="@+id/editTextText4"
-                android:layout_width="match_parent"
-                android:layout_height="37dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rounded_corners_button"
-                android:hint="@string/correo"
-                android:textColorHint="@color/color_text"
-                android:inputType="textEmailAddress"
-                android:textColor="@color/primary_text_color"
-                android:textAlignment="center" />
-
-            <EditText
-                android:id="@+id/editTextText6"
-                android:layout_width="match_parent"
-                android:layout_height="37dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rounded_corners_button"
-                android:hint="@string/celular"
-                android:textColorHint="@color/color_text"
-                android:inputType="phone"
-                android:textColor="@color/primary_text_color"
-                android:textAlignment="center" />
 
             <EditText
                 android:id="@+id/editTextText7"
                 android:layout_width="match_parent"
-                android:layout_height="37dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/rounded_corners_button"
-                android:hint="@string/contrase_a"
-                android:textColorHint="@color/color_text"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/ingresar_contrase_a"
                 android:inputType="textPassword"
+                android:padding="12dp"
+                android:textAlignment="center"
                 android:textColor="@color/primary_text_color"
-                android:textAlignment="center" />
+                android:textColorHint="@color/color_text" />
 
-            <Button
-                android:id="@+id/button3"
+            <ImageButton
+                android:id="@+id/visibility_button"
+                android:layout_width="30dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="1dp"
+                android:background="?attr/selectableItemBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_visibility_off" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/editTextText8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="32dp"
-                android:backgroundTint="#2F651C"
-                android:text="@string/btn_inscribete"
+                android:background="@drawable/edit_text_background"
+                android:hint="@string/confirmar_contrase_a"
+                android:inputType="textPassword"
+                android:padding="12dp"
                 android:textAlignment="center"
-                android:textAllCaps="false" />
+                android:textColor="@color/primary_text_color"
+                android:textColorHint="@color/color_text" />
 
-        </LinearLayout>
+            <ImageButton
+                android:id="@+id/visibility_button2"
+                android:layout_width="30dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="1dp"
+                android:background="?attr/selectableItemBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_visibility_off" />
+        </RelativeLayout>
+
+
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:backgroundTint="#2F651C"
+            android:text="@string/btn_registrate"
+            android:background="@drawable/rounded_corners_button"
+            android:textAlignment="center"
+            android:textAllCaps="false" />
+
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:textColor="@color/color_text"
+            android:textStyle="bold" />
+
+
     </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

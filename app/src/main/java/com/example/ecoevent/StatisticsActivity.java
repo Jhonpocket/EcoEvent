@@ -6,6 +6,8 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -76,6 +78,14 @@ public class StatisticsActivity extends AppCompatActivity {
                 } else {
                     return false;
                 }
+            }
+        });
+        ImageButton logoutButton = findViewById(R.id.logout_button);
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Implementar la lógica para cerrar sesión aquí
+                logout();
             }
         });
     }
@@ -225,5 +235,13 @@ public class StatisticsActivity extends AppCompatActivity {
 
             myTableLayout.addView(tableRow);
         }
+    }
+    private void logout() {
+        // Implementa la lógica para cerrar sesión (por ejemplo, limpiar sesión y redirigir a la pantalla de inicio de sesión)
+        Toast.makeText(this, "Cerrar sesión", Toast.LENGTH_SHORT).show();
+        // Redirige al usuario a la pantalla de inicio de sesión
+        Intent intent = new Intent(StatisticsActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish(); // Opcional: cerrar la actividad actual
     }
 }

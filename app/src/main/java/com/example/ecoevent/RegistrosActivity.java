@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -117,6 +118,14 @@ public class RegistrosActivity extends AppCompatActivity {
                 }
             }
         });
+        ImageButton logoutButton = findViewById(R.id.logout_button);
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Implementar la lógica para cerrar sesión aquí
+                logout();
+            }
+        });
     }
     private String getMonthName(int month) {
         String[] monthNames = {
@@ -156,6 +165,15 @@ public class RegistrosActivity extends AppCompatActivity {
         //mensaje de exito
         Toast.makeText(this, "Datos guardados", Toast.LENGTH_SHORT).show();
         finish();
+    }
+
+    private void logout() {
+        // Implementa la lógica para cerrar sesión (por ejemplo, limpiar sesión y redirigir a la pantalla de inicio de sesión)
+        Toast.makeText(this, "Cerrar sesión", Toast.LENGTH_SHORT).show();
+        // Redirige al usuario a la pantalla de inicio de sesión
+        Intent intent = new Intent(RegistrosActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish(); // Opcional: cerrar la actividad actual
     }
 
 }

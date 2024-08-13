@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="categories_text">Categories</string>
+    <string name="statistics_text">Statistics</string>
+    <string name="tips_text">Tips</string>
+    <string name="contact_text">Contact</string>
+    <string name="ir_a_pantalla_principal">"Go to Main Screen "</string>
+    <string name="home">Home</string>
+    <string name="registros_text">Records</string>
+    <string name="consejos_text">Tips</string>
+    <string name="reg_strate">"Sign Up "</string>
+    <string name="ingresar_correo">"Enter Email "</string>
+    <string name="contrase_a">Password</string>
+    <string name="ingresar_contrase_a">"Enter Password "</string>
+    <string name="btn_ingresar">LOGIN</string>
+    <string name="no_tienes_una_cuenta">"Don’t have an account? "</string>
+    <string name="btn_registrate">"SIGN UP "</string>
+    <string name="nombre">Name</string>
+    <string name="correo">Email</string>
+    <string name="celular">Phone</string>
+    <string name="btn_inscribete">Sign Up</string>
+    <string name="registrar">Register</string>
+    <string name="tipo">Type:</string>
+    <string name="guardar">Save</string>
+    <string name="cantidadEdit">"Quantity: "</string>
+    <string name="mes">Month:</string>
+    <string name="costo">Cost:</string>
+    <string name="costohit">Cost</string>
+    <string name="google_login">Google</string>
+    <string name="facebook_login">Facebook</string>
+    <string name="forgot_password">"Forgot your username/password? "</string>
+    <string name="logout">"Log Out      "</string>
+    <string name="estadisiticas">Statistics</string>
+    <string name="categoria">Category</string>
+    <string name="estad_sticas">Statistics</string>
+    <string name="cantidad">Quantity</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="password_recovery_email_sent_please_check_your_inbox">Password recovery email sent. Please check your inbox.</string>
+    <string name="back">Back</string>
+    <string name="confirmar_contrase_a">Confirm Password</string>
+</resources>

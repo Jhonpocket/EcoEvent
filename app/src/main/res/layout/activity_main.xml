@@ -72,7 +72,7 @@
             android:layout_height="48dp"
             android:layout_marginHorizontal="32dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/rounded_corners_button"
+            android:background="@drawable/edit_text_background"
             android:hint="@string/ingresar_correo"
             android:inputType="textEmailAddress"
             android:padding="12dp"
@@ -101,7 +101,7 @@
                 android:id="@+id/editTextTextPassword2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/rounded_corners_button"
+                android:background="@drawable/edit_text_background"
                 android:hint="@string/ingresar_contrase_a"
                 android:inputType="textPassword"
                 android:padding="12dp"
@@ -129,6 +129,7 @@
             android:layout_marginBottom="16dp"
             android:backgroundTint="#2F651C"
             android:text="@string/btn_ingresar"
+            android:background="@drawable/rounded_corners_button"
             android:textAlignment="center"
             android:textAllCaps="false" />
 
@@ -140,6 +141,7 @@
             android:layout_marginBottom="16dp"
             android:text="@string/no_tienes_una_cuenta"
             android:textAlignment="center"
+
             android:textColor="@color/design_default_color_on_secondary"
             android:textSize="18sp"
             android:textStyle="bold|italic" />
@@ -151,6 +153,7 @@
             android:layout_marginHorizontal="32dp"
             android:backgroundTint="#2F651C"
             android:text="@string/btn_registrate"
+            android:background="@drawable/rounded_corners_button"
             android:textAlignment="center"
             android:textAllCaps="false" />
 

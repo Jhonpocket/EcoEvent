@@ -3,6 +3,9 @@ package com.example.ecoevent;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -65,5 +68,22 @@ public class TipsActivity extends AppCompatActivity {
                 }
             }
         });
+        ImageButton logoutButton = findViewById(R.id.logout_button);
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Implementar la lógica para cerrar sesión aquí
+                logout();
+            }
+        });
+    }
+
+    private void logout() {
+        // Implementa la lógica para cerrar sesión (por ejemplo, limpiar sesión y redirigir a la pantalla de inicio de sesión)
+        Toast.makeText(this, "Cerrar sesión", Toast.LENGTH_SHORT).show();
+        // Redirige al usuario a la pantalla de inicio de sesión
+        Intent intent = new Intent(TipsActivity.this, MainActivity.class);
+        startActivity(intent);
+        finish(); // Opcional: cerrar la actividad actual
     }
 }
