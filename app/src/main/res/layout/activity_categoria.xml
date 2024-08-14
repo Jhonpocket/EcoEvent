@@ -9,19 +9,7 @@
 
     <!-- TextView for the app title -->
 
-    <ImageView
-        android:id="@+id/background_image"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:alpha="0.2"
-        android:scaleType="centerCrop"
-        android:src="@drawable/rounded_corners_button"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+
     <!-- Logout Icon -->
     <ImageButton
         android:id="@+id/logout_button"
@@ -41,7 +29,7 @@
         android:layout_width="336dp"
         android:layout_height="123dp"
         android:gravity="center"
-        android:text="@string/app_title"
+        android:text="@string/categories_text"
         android:textColor="@color/primary_text_color"
         android:textSize="36sp"
         android:textStyle="bold"

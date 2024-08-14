@@ -70,11 +70,11 @@ public class RegistrosActivity extends AppCompatActivity {
 
         // Mostrar la lista correspondiente según la selección
         if ("Bebidas".equals(selectedItem) || "Alimentos".equals(selectedItem)  || selectedItem == null  || selectedItem.isEmpty()  || "Seleccione".equals(selectedItem)) {
-            ArrayAdapter<String> adapterTipo = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, tiposPlasticos);
+            ArrayAdapter<String> adapterTipo = new ArrayAdapter<>(this, R.layout.spinner_item, tiposPlasticos);
             adapterTipo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinner_tipo.setAdapter(adapterTipo);
         } else if ("Decoraciones".equals(selectedItem)) {
-            ArrayAdapter<String> adapterTipo = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, decoraciones);
+            ArrayAdapter<String> adapterTipo = new ArrayAdapter<>(this, R.layout.spinner_item, decoraciones);
             adapterTipo.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
             spinner_tipo.setAdapter(adapterTipo);
         }
@@ -86,7 +86,7 @@ public class RegistrosActivity extends AppCompatActivity {
             meses[i] = getMonthName(i);
         }
 
-        ArrayAdapter<String> adapterMes = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, meses);
+        ArrayAdapter<String> adapterMes = new ArrayAdapter<>(this, R.layout.spinner_item, meses);
         adapterMes.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner_mes.setAdapter(adapterMes);
         spinner_mes.setSelection(mesActual);

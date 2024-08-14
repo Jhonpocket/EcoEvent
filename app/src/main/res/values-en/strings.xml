@@ -39,4 +39,5 @@
     <string name="password_recovery_email_sent_please_check_your_inbox">Password recovery email sent. Please check your inbox.</string>
     <string name="back">Back</string>
     <string name="confirmar_contrase_a">Confirm Password</string>
+    <string name="ecotips">Ecotips</string>
 </resources>
