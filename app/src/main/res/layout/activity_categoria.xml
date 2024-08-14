@@ -41,15 +41,27 @@
         app:layout_constraintVertical_bias="0.085" />
 
     <!-- ImageView for the app image -->
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="222dp"
-        android:layout_height="169dp"
+    <TextView
+        android:id="@+id/tip_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/primary_text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:srcCompat="@drawable/imagen1" />
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <ImageView
+        android:id="@+id/tip_image_view"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tip_text_view"
+        app:srcCompat="@drawable/default_tip_image" />
 
     <!-- Spinner for options -->
     <!-- Spinner for options -->
@@ -67,23 +79,22 @@
         android:background="@drawable/spinner_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@id/tip_image_view" />
 
     <Button
         android:id="@+id/buttonRegistrar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="88dp"
+        android:background="@drawable/rounded_corners_button"
         android:backgroundTint="#2F651C"
         android:text="@string/registrar"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/spinner"
-        android:background="@drawable/rounded_corners_button"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner"
+        app:layout_constraintVertical_bias="0.666" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

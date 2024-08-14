@@ -1,6 +1,7 @@
 package com.example.ecoevent;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,16 +23,24 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.Random;
+
 public class CategoriaActivity extends AppCompatActivity {
     private static final String SELECTED_ITEM_ID = "SELECTED_ITEM_ID";
     private int selectedItemId = R.id.menu_categories;
     private String selectedItem;
+    private TextView tipTextView;
+    private ImageView tipImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_categoria);
+        tipTextView = findViewById(R.id.tip_text_view);
+        tipImageView = findViewById(R.id.tip_image_view);
 
+        // Mostrar un consejo aleatorio
+        showRandomTip();
         Spinner spinner = findViewById(R.id.spinner);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
@@ -110,5 +120,21 @@ public class CategoriaActivity extends AppCompatActivity {
         Intent intent = new Intent(CategoriaActivity.this, MainActivity.class);
         startActivity(intent);
         finish(); // Opcional: cerrar la actividad actual
+    }
+    private void showRandomTip() {
+        Resources res = getResources();
+        String[] tips = res.getStringArray(R.array.tips_array);
+
+        // Seleccionar un índice aleatorio
+        Random random = new Random();
+        int index = random.nextInt(tips.length);
+
+        // Obtener el consejo y la imagen correspondiente
+        String selectedTip = tips[index];
+        int imageResId = getResources().getIdentifier("tip" + (index + 1) + "_image", "drawable", getPackageName());
+
+        // Actualizar el TextView y el ImageView
+        tipTextView.setText(selectedTip);
+        tipImageView.setImageResource(imageResId);
     }
 }

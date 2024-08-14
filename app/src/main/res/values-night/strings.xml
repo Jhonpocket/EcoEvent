@@ -44,5 +44,14 @@
         <item>Alimentos</item>
         <item>Decoraciones</item>
     </string-array>
+    <string-array name="tips_array">
+        <item>Usa bolsas reutilizables cuando vayas de compras para reducir el uso de bolsas de plástico desechables.</item>
+        <item>Evita los productos con envases de plástico innecesarios y elige opciones con envases reciclables.</item>
+        <item>Opta por botellas reutilizables en lugar de botellas de plástico de un solo uso.</item>
+        <item>Compra a granel siempre que sea posible para reducir el uso de envases plásticos.</item>
+        <item>Usa utensilios reutilizables en lugar de cubiertos desechables de plástico.</item>
+        <item>Recicla correctamente el plástico que uses para asegurarte de que no termine en vertederos o en el océano.</item>
+        <item>Considera usar productos de limpieza y belleza en envases de vidrio o metal en lugar de plástico.</item>
+    </string-array>
 
     </resources>
