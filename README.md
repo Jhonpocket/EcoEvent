@@ -58,6 +58,12 @@ Para el desarrollo de esta aplicación se utilizarán las siguientes tecnología
 - Persistencia de datos: Utilización de la API de persistencia de Android para almacenar de manera persistente los datos de uso de plástico ingresados por los usuarios, garantizando que la información se mantenga disponible incluso después de cerrar la aplicación.
 
 - Interfaz de usuario intuitiva: Diseño de una interfaz gráfica intuitiva y funcional que permita a los usuarios registrar fácilmente datos de uso de plástico, visualizar estadísticas y recibir recomendaciones para reducir el consumo de plástico en eventos.
+## Diagramas de Flujo de la aplicación 
+- Flujo del ciclo de vida de la aplicación
+![Diagramas de flujo](https://github.com/user-attachments/assets/6d8f5dd5-58d0-41f5-8931-4c2cfb004eec)
+
+![Diagrama de Flujo 1](https://github.com/user-attachments/assets/94f89654-2b31-43a4-9282-6db3981c9256)
+
 
 ## Interfaz
 
