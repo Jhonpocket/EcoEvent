@@ -110,7 +110,7 @@ Para el desarrollo de esta aplicación se utilizarán las siguientes tecnología
 - La aplicación debería ofrecer recomendaciones personalizadas basadas en el registro de consumo realizado por el usuario.
 - Estos consejos deben ayudar a los usuarios a reducir su consumo de plástico y fomentar prácticas más eficientes de reciclaje.
 
-![](https://drive.google.com/file/d/18wJSqgtwoNtTd17xivfXFXkLNDnJAhZm/view?usp=sharing)
+![](https://drive.google.com/file/d/1PdbUYNj1GQKrW6t9EFytij0NF0rXkmZc/view?usp=sharing)
 > Pantalla de Consejos.
 
 ![](https://drive.google.com/file/d/1PdbUYNj1GQKrW6t9EFytij0NF0rXkmZc/view?usp=sharing)
