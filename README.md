@@ -62,8 +62,7 @@ Para el desarrollo de esta aplicación se utilizarán las siguientes tecnología
 - Flujo del ciclo de vida de la aplicación
 ![Diagramas de flujo](https://github.com/user-attachments/assets/6d8f5dd5-58d0-41f5-8931-4c2cfb004eec)
 
-![Diagrama de Flujo 1](https://github.com/user-attachments/assets/94f89654-2b31-43a4-9282-6db3981c9256)
-
+![Diagrama de Flujo 1](https://github.com/user-attachments/assets/f7b9168c-62b6-4053-8015-4da4638130ac)
 
 ## Interfaz
 
