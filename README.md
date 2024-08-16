@@ -66,20 +66,20 @@ Para el desarrollo de esta aplicación se utilizarán las siguientes tecnología
 - Para iniciar sesión, los usuarios deben ingresar un nombre de usuario y una contraseña válidos.
 - Los usuarios que sean nuevos deben poder crear una cuenta nueva con un nombre de usuario único y una contraseña para el ingreso.
 
-![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/InicioS.png?token=GHSAT0AAAAAACVKEFWEHQQVFMEHHG4UFQTUZV7VXUA)
+![](https://drive.google.com/file/d/1J8i4ZfjCjDJqv0cZFSzNZZwdvRg46qD1/view?usp=sharing)
 > Inicio de Sesion.
 
-![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/InicioS2.png?token=GHSAT0AAAAAACVKEFWEA5UNX4T7GCAR375AZV7VZQQ)
+![](https://drive.google.com/file/d/1f46YKg7PsdaX44w592hYC515aJKqK0vA/view?usp=sharing)
 > Registro de Usuario.
 
-![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/InicioS3.png?token=GHSAT0AAAAAACVKEFWFIBUP5NLOZUS53XDIZV7V2RQ)
+![](https://drive.google.com/file/d/1nKh4Bh0KW25abQgv6esYbOlwbEjTp-9s/view?usp=sharing)
 > Recuperacion de Contraseña.
 
 #### Pantalla principal con información general del consumo de Plásticos:
 - La aplicación ECOEVENT debe permitir el acceso rápido a las funciones principales en la pantalla principal después de iniciar sesión.
 - Esta pantalla debe mostrar un menú de navegación hacia diferentes pantallas: categorías, estadísticas, consejos y registros.
 
-![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/Home.png?token=GHSAT0AAAAAACVKEFWEDSI3TKRBSCZ4XHHOZV7V3HQ)
+![](https://drive.google.com/file/d/14Zk9kwrwHUr6WaO4FlieZLG-F9qeSc_K/view?usp=sharing)
 > Pantalla de Inicio.
 
 #### Pantalla de categorías para seleccionar el tipo de plástico a registrar:
@@ -87,7 +87,7 @@ Para el desarrollo de esta aplicación se utilizarán las siguientes tecnología
 - Las categorías pueden incluir bebidas, decoraciones y alimentos.
 - Una vez que los usuarios elijan la categoría de consumo, deberían poder ingresar los detalles específicos de su consumo en una pantalla especialmente diseñada para ello.
   
-![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/Categorias.png?token=GHSAT0AAAAAACVKEFWEGD23RIEENFRBW3LMZV7V4JA)
+![](https://drive.google.com/file/d/1v4n1mmBUbDIN4uIqJ_JFC77cvw3SgCa7/view?usp=sharing)
 > Pantalla de Categorias.
 
 #### Pantalla de registro para ingresar los datos de consumo
@@ -95,7 +95,7 @@ Para el desarrollo de esta aplicación se utilizarán las siguientes tecnología
 - Permitir al usuario ingresar datos específicos sobre el uso de plástico en una categoría seleccionada. Los usuarios deben poder registrar los datos específicos de consumo en una pantalla dedicada.
 - La pantalla de registro debe permitir a los usuarios ingresar los valores de Cantidad, costo del plástico y mes de registro.
 
-![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/Registros.png?token=GHSAT0AAAAAACVKEFWFBTEFI23HPXSAVMRUZV7V6JA)
+![](https://drive.google.com/file/d/1osGrbJNUFH66uLQ3Z_4ID0EbVjJ7PoSw/view?usp=sharing)
 > Pantalla de Registro de Consumo.
   
 #### Pantalla de estadísticas con detalles sobre el consumo de plástico:
@@ -103,17 +103,17 @@ Para el desarrollo de esta aplicación se utilizarán las siguientes tecnología
 - Las estadísticas pueden abarcar el consumo promedio, el máximo y el mínimo durante un período específico.
 - Debe permitir una comparativa entre eventos.
 
-![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/Estadisticas.png?token=GHSAT0AAAAAACVKEFWEKCVCW42N2IAX5UXWZV7V63A)
+![](https://drive.google.com/file/d/1qe0WcBdD29ZHAPC-49oyqmrpeUPpr0K7/view?usp=sharing)
 > Pantalla de Estadisticas.
   
 #### Pantalla de consejos personalizados para reducir el consumo de plástico:
 - La aplicación debería ofrecer recomendaciones personalizadas basadas en el registro de consumo realizado por el usuario.
 - Estos consejos deben ayudar a los usuarios a reducir su consumo de plástico y fomentar prácticas más eficientes de reciclaje.
 
-![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/consejos.png?token=GHSAT0AAAAAACVKEFWELY2D7NZTO3YTMLKEZV7V7KA)
+![](https://drive.google.com/file/d/18wJSqgtwoNtTd17xivfXFXkLNDnJAhZm/view?usp=sharing)
 > Pantalla de Consejos.
 
-![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/consejos2.png?token=GHSAT0AAAAAACVKEFWFUFWFS4OEIG2YKCZOZV7V74Q)
+![](https://drive.google.com/file/d/1PdbUYNj1GQKrW6t9EFytij0NF0rXkmZc/view?usp=sharing)
 > Pantalla de Lectura del Consejo.
 
 ### Final
