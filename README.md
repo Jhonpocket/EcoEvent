@@ -4,18 +4,11 @@ La aplicación EcoEvent es una aplicación móvil diseñada para ayudar a los or
 
 La aplicación ofrece una plataforma integral que abarca múltiples categorías de uso de plástico, como alimentos, bebidas y decoraciones, proporcionando una visión holística y datos precisos para evaluar y mejorar las prácticas sostenibles.
 
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-
-
 ## Funcionalidades y Vistas
 
 **1. Pantalla de Inicio de Sesión**
 
-**Registro e Inicio de Sesión: **Permite a los usuarios iniciar sesión en la aplicación utilizando sus credenciales o registrarse como nuevos usuarios, asegurando el acceso seguro y personalizado a la aplicación.
+**Registro e Inicio de Sesión:** Permite a los usuarios iniciar sesión en la aplicación utilizando sus credenciales o registrarse como nuevos usuarios, asegurando el acceso seguro y personalizado a la aplicación.
 
 **2. Pantalla Principal**
 
@@ -23,7 +16,7 @@ La aplicación ofrece una plataforma integral que abarca múltiples categorías 
 
 **3. Pantalla de Categorías**
 
-**Selección de Categorías: **Permite al usuario seleccionar la categoría de uso de plástico que desea registrar y realizar un seguimiento, facilitando la organización y el registro detallado de datos.
+**Selección de Categorías:** Permite al usuario seleccionar la categoría de uso de plástico que desea registrar y realizar un seguimiento, facilitando la organización y el registro detallado de datos.
 
 **4. Pantalla de Registro**
 
@@ -68,33 +61,59 @@ Para el desarrollo de esta aplicación se utilizarán las siguientes tecnología
 
 ## Interfaz
 
-####Pantalla de inicio de sesión y registro de usuarios:
+#### Pantalla de inicio de sesión y registro de usuarios:
 - La aplicación **ECOEVENT** debe ofrecer la posibilidad de que los usuarios se registren y también inicien sesión para acceder a su cuenta personal.
 - Para iniciar sesión, los usuarios deben ingresar un nombre de usuario y una contraseña válidos.
 - Los usuarios que sean nuevos deben poder crear una cuenta nueva con un nombre de usuario único y una contraseña para el ingreso.
+
+![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/InicioS.png?token=GHSAT0AAAAAACVKEFWEHQQVFMEHHG4UFQTUZV7VXUA)
+> Inicio de Sesion.
+
+![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/InicioS2.png?token=GHSAT0AAAAAACVKEFWEA5UNX4T7GCAR375AZV7VZQQ)
+> Registro de Usuario.
+
+![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/InicioS3.png?token=GHSAT0AAAAAACVKEFWFIBUP5NLOZUS53XDIZV7V2RQ)
+> Recuperacion de Contraseña.
 
 #### Pantalla principal con información general del consumo de Plásticos:
 - La aplicación ECOEVENT debe permitir el acceso rápido a las funciones principales en la pantalla principal después de iniciar sesión.
 - Esta pantalla debe mostrar un menú de navegación hacia diferentes pantallas: categorías, estadísticas, consejos y registros.
 
+![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/Home.png?token=GHSAT0AAAAAACVKEFWEDSI3TKRBSCZ4XHHOZV7V3HQ)
+> Pantalla de Inicio.
+
 #### Pantalla de categorías para seleccionar el tipo de plástico a registrar:
 - La aplicación debe incluir una pantalla en la que los usuarios puedan elegir la categoría específica de consumo de plástico que desean registrar
 - Las categorías pueden incluir bebidas, decoraciones y alimentos.
 - Una vez que los usuarios elijan la categoría de consumo, deberían poder ingresar los detalles específicos de su consumo en una pantalla especialmente diseñada para ello.
-
-![](https://pandao.github.io/editor.md/examples/images/4.jpg)
-> Follow your heart.
+  
+![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/Categorias.png?token=GHSAT0AAAAAACVKEFWEGD23RIEENFRBW3LMZV7V4JA)
+> Pantalla de Categorias.
 
 #### Pantalla de registro para ingresar los datos de consumo
 - En la pantalla de registro, los usuarios deben poder introducir los valores de consumo.
 - Permitir al usuario ingresar datos específicos sobre el uso de plástico en una categoría seleccionada. Los usuarios deben poder registrar los datos específicos de consumo en una pantalla dedicada.
 - La pantalla de registro debe permitir a los usuarios ingresar los valores de Cantidad, costo del plástico y mes de registro.
+
+![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/Registros.png?token=GHSAT0AAAAAACVKEFWFBTEFI23HPXSAVMRUZV7V6JA)
+> Pantalla de Registro de Consumo.
+  
 #### Pantalla de estadísticas con detalles sobre el consumo de plástico:
 - La aplicación debe mostrar estadísticas detalladas sobre el consumo y reducción de plástico de los usuarios en una pantalla específica.
 - Las estadísticas pueden abarcar el consumo promedio, el máximo y el mínimo durante un período específico.
-- Debe permitir una comparativa entre eventos. 
+- Debe permitir una comparativa entre eventos.
+
+![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/Estadisticas.png?token=GHSAT0AAAAAACVKEFWEKCVCW42N2IAX5UXWZV7V63A)
+> Pantalla de Estadisticas.
+  
 #### Pantalla de consejos personalizados para reducir el consumo de plástico:
 - La aplicación debería ofrecer recomendaciones personalizadas basadas en el registro de consumo realizado por el usuario.
 - Estos consejos deben ayudar a los usuarios a reducir su consumo de plástico y fomentar prácticas más eficientes de reciclaje.
 
-###Final
+![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/consejos.png?token=GHSAT0AAAAAACVKEFWELY2D7NZTO3YTMLKEZV7V7KA)
+> Pantalla de Consejos.
+
+![](https://raw.githubusercontent.com/Jhonpocket/EcoEvent/master/EcoEvent/app/src/androidTest/java/com/example/Capturas/consejos2.png?token=GHSAT0AAAAAACVKEFWFUFWFS4OEIG2YKCZOZV7V74Q)
+> Pantalla de Lectura del Consejo.
+
+### Final
