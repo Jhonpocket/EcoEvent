@@ -6,8 +6,6 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageButton;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -80,14 +78,6 @@ public class StatisticsActivity extends AppCompatActivity {
                 }
             }
         });
-        ImageButton logoutButton = findViewById(R.id.logout_button);
-        logoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Implementar la lógica para cerrar sesión aquí
-                logout();
-            }
-        });
     }
 
 
@@ -141,6 +131,38 @@ public class StatisticsActivity extends AppCompatActivity {
             pieChart.invalidate();
         }
     }
+
+
+        /* Configurar PieChart
+        PieChart pieChart = findViewById(R.id.pieChart);
+
+        ArrayList<PieEntry> pieEntries = new ArrayList<>();
+        pieEntries.add(new PieEntry(1000f, "Enero"));
+        pieEntries.add(new PieEntry(900f, "Febrero"));
+        pieEntries.add(new PieEntry(500f, "Marzo"));
+        pieEntries.add(new PieEntry(800f, "Abril"));
+        pieEntries.add(new PieEntry(600f, "Mayo"));
+
+        PieDataSet pieDataSet = new PieDataSet(pieEntries, "");
+
+        ArrayList<Integer> pieColors = new ArrayList<>();
+        pieColors.add(Color.rgb(15,158,213));
+        pieColors.add(Color.rgb(60,125,34));
+        pieColors.add(Color.rgb(12,118,158));
+        pieColors.add(Color.rgb(160,43,147));
+        pieColors.add(Color.rgb(233,113,50));
+        pieDataSet.setColors(pieColors);
+
+        PieData pieData = new PieData(pieDataSet);
+        pieChart.setData(pieData);
+        pieChart.setUsePercentValues(false);
+        pieChart.setEntryLabelColor(Color.WHITE);
+
+        Description pieDescription = new Description();
+        pieDescription.setText("Consumo mes");
+        pieChart.setDescription(pieDescription);
+        pieChart.invalidate();*/
+
 
         // Configurar HorizontalBarChart
         /*HorizontalBarChart horizontalBarChart = findViewById(R.id.horizontalBarChart);
@@ -203,13 +225,5 @@ public class StatisticsActivity extends AppCompatActivity {
 
             myTableLayout.addView(tableRow);
         }
-    }
-    private void logout() {
-        // Implementa la lógica para cerrar sesión (por ejemplo, limpiar sesión y redirigir a la pantalla de inicio de sesión)
-        Toast.makeText(this, "Cerrar sesión", Toast.LENGTH_SHORT).show();
-        // Redirige al usuario a la pantalla de inicio de sesión
-        Intent intent = new Intent(StatisticsActivity.this, MainActivity.class);
-        startActivity(intent);
-        finish(); // Opcional: cerrar la actividad actual
     }
 }

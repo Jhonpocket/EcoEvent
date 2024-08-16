@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EcoEvent" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/primary_text_color</item>
+        <item name="colorPrimaryDark">@color/primary_text_color</item>
+        <item name="colorAccent">@color/primary_text_color</item>
+        <!-- Background and surface colors -->
+        <item name="background">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <!-- Text colors -->
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSurfaceVariant">@color/color_text</item>
+    </style>
+</resources>

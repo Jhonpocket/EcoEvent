@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#000000</color>
+    <color name="surface">#000000</color>
+    <color name="black">#FFFFFF</color> <!-- Invertido para tema oscuro -->
+    <color name="white">#000000</color> <!-- Invertido para tema oscuro -->
+    <color name="primary_text_color">#9AD183</color> <!-- Se mantiene igual -->
+    <color name="menu_text_color">#A7C89A</color> <!-- Ajustado para tema oscuro -->
+    <color name="transparente">#33574645</color> <!-- Ajustado para tema oscuro -->
+    <color name="teal_200">#597F66</color> <!-- Ajustado para tema oscuro -->
+    <color name="teal_700">#365140</color> <!-- Ajustado para tema oscuro -->
+    <color name="color_text">#D4EAD4</color> <!-- Ajustado para tema oscuro -->
+    <color name="color_spiner">#3D3D3D</color> <!-- Ajustado para tema oscuro -->
+    <color name="colorPrimary">#2E5F31</color> <!-- Ajustado para tema oscuro -->
+    <color name="colorPrimaryDark">#20451D</color> <!-- Ajustado para tema oscuro -->
+    <color name="colorAccent">#7FBF7C</color> <!-- Ajustado para tema oscuro -->
+</resources>

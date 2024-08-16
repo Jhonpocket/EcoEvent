@@ -5,33 +5,27 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-import com.example.ecoevent.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class TipsActivity extends AppCompatActivity {
 
     private static final String SELECTED_ITEM_ID = "SELECTED_ITEM_ID";
     private int selectedItemId = R.id.menu_about;
+    private ImageView reduce, limpio, recicla;
+
+    private LinearLayout tip1, tip2, tip3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_tips);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
 
         final int MENU_HOME = R.id.menu_home;
         final int MENU_CATEGORIES = R.id.menu_categories;
@@ -74,6 +68,67 @@ public class TipsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Implementar la lógica para cerrar sesión aquí
                 logout();
+            }
+        });
+
+        reduce = findViewById(R.id.reduce);
+        limpio = findViewById(R.id.limpio);
+        recicla = findViewById(R.id.recicla);
+        tip1 = findViewById(R.id.tip1);
+        tip2 = findViewById(R.id.tip2);
+        tip3 = findViewById(R.id.tip3);
+        reduce.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String selectedItemId = "reduce";
+                Intent intent = new Intent(TipsActivity.this, NewsActivity.class);
+                intent.putExtra("selectedId", selectedItemId);
+                startActivity(intent);
+            }
+        });
+        limpio.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String selectedItemId = "limpio";
+                Intent intent = new Intent(TipsActivity.this, NewsActivity.class);
+                intent.putExtra("selectedId", selectedItemId);
+                startActivity(intent);
+            }
+        });
+        recicla.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String selectedItemId = "recicla";
+                Intent intent = new Intent(TipsActivity.this, NewsActivity.class);
+                intent.putExtra("selectedId", selectedItemId);
+                startActivity(intent);
+            }
+        });
+        tip1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String selectedItemId = "reduce";
+                Intent intent = new Intent(TipsActivity.this, NewsActivity.class);
+                intent.putExtra("selectedId", selectedItemId);
+                startActivity(intent);
+            }
+        });
+        tip2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String selectedItemId = "limpio";
+                Intent intent = new Intent(TipsActivity.this, NewsActivity.class);
+                intent.putExtra("selectedId", selectedItemId);
+                startActivity(intent);
+            }
+        });
+        tip3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String selectedItemId = "recicla";
+                Intent intent = new Intent(TipsActivity.this, NewsActivity.class);
+                intent.putExtra("selectedId", selectedItemId);
+                startActivity(intent);
             }
         });
     }
