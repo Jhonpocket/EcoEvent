@@ -71,28 +71,28 @@ Para el desarrollo de esta aplicación se utilizarán las siguientes tecnología
 - Para iniciar sesión, los usuarios deben ingresar un nombre de usuario y una contraseña válidos.
 - Los usuarios que sean nuevos deben poder crear una cuenta nueva con un nombre de usuario único y una contraseña para el ingreso.
 
-![](https://drive.google.com/file/d/1J8i4ZfjCjDJqv0cZFSzNZZwdvRg46qD1/view?usp=sharing)
+![InicioS](https://github.com/user-attachments/assets/c35f2967-a3bd-4d5a-9502-332952a186b2)
 > Inicio de Sesion.
 
-![](https://drive.google.com/file/d/1f46YKg7PsdaX44w592hYC515aJKqK0vA/view?usp=sharing)
+![InicioS2](https://github.com/user-attachments/assets/78c03e5d-2282-4496-9d40-2bec3c8f2749)
 > Registro de Usuario.
 
-![](https://drive.google.com/file/d/1nKh4Bh0KW25abQgv6esYbOlwbEjTp-9s/view?usp=sharing)
+![InicioS3](https://github.com/user-attachments/assets/e86292a0-a770-4a29-9600-39d6cad454aa)
 > Recuperacion de Contraseña.
 
 #### Pantalla principal con información general del consumo de Plásticos:
 - La aplicación ECOEVENT debe permitir el acceso rápido a las funciones principales en la pantalla principal después de iniciar sesión.
 - Esta pantalla debe mostrar un menú de navegación hacia diferentes pantallas: categorías, estadísticas, consejos y registros.
 
-![](https://drive.google.com/file/d/14Zk9kwrwHUr6WaO4FlieZLG-F9qeSc_K/view?usp=sharing)
+![Home](https://github.com/user-attachments/assets/2ddda4f7-c02c-4f7e-a000-86ebce8a1eb7)
 > Pantalla de Inicio.
 
 #### Pantalla de categorías para seleccionar el tipo de plástico a registrar:
 - La aplicación debe incluir una pantalla en la que los usuarios puedan elegir la categoría específica de consumo de plástico que desean registrar
 - Las categorías pueden incluir bebidas, decoraciones y alimentos.
 - Una vez que los usuarios elijan la categoría de consumo, deberían poder ingresar los detalles específicos de su consumo en una pantalla especialmente diseñada para ello.
-  
-![](https://drive.google.com/file/d/1v4n1mmBUbDIN4uIqJ_JFC77cvw3SgCa7/view?usp=sharing)
+
+![Categorias](https://github.com/user-attachments/assets/f4e0b6ae-2c20-468d-b747-02517ecd60c4)
 > Pantalla de Categorias.
 
 #### Pantalla de registro para ingresar los datos de consumo
@@ -100,7 +100,7 @@ Para el desarrollo de esta aplicación se utilizarán las siguientes tecnología
 - Permitir al usuario ingresar datos específicos sobre el uso de plástico en una categoría seleccionada. Los usuarios deben poder registrar los datos específicos de consumo en una pantalla dedicada.
 - La pantalla de registro debe permitir a los usuarios ingresar los valores de Cantidad, costo del plástico y mes de registro.
 
-![](https://drive.google.com/file/d/1osGrbJNUFH66uLQ3Z_4ID0EbVjJ7PoSw/view?usp=sharing)
+![Registros](https://github.com/user-attachments/assets/72fe9cdd-4091-43b3-9f27-8dc4012bb07f)
 > Pantalla de Registro de Consumo.
   
 #### Pantalla de estadísticas con detalles sobre el consumo de plástico:
@@ -108,17 +108,17 @@ Para el desarrollo de esta aplicación se utilizarán las siguientes tecnología
 - Las estadísticas pueden abarcar el consumo promedio, el máximo y el mínimo durante un período específico.
 - Debe permitir una comparativa entre eventos.
 
-![](https://drive.google.com/file/d/1qe0WcBdD29ZHAPC-49oyqmrpeUPpr0K7/view?usp=sharing)
+![Estadisticas](https://github.com/user-attachments/assets/9584f13b-80a0-4c1e-83f6-dd4bfc25a010)
 > Pantalla de Estadisticas.
   
 #### Pantalla de consejos personalizados para reducir el consumo de plástico:
 - La aplicación debería ofrecer recomendaciones personalizadas basadas en el registro de consumo realizado por el usuario.
 - Estos consejos deben ayudar a los usuarios a reducir su consumo de plástico y fomentar prácticas más eficientes de reciclaje.
 
-![](https://drive.google.com/file/d/1PdbUYNj1GQKrW6t9EFytij0NF0rXkmZc/view?usp=sharing)
+![consejos](https://github.com/user-attachments/assets/3fbf45ef-76bc-4eae-8cfc-48a10148f32a)
 > Pantalla de Consejos.
 
-![](https://drive.google.com/file/d/1PdbUYNj1GQKrW6t9EFytij0NF0rXkmZc/view?usp=sharing)
+![consejos2](https://github.com/user-attachments/assets/be519e7a-96b4-482b-ae59-3f4eb34226b5)
 > Pantalla de Lectura del Consejo.
 
 ### Final
